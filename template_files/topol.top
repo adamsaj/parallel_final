@@ -1,0 +1,25 @@
+; simple salt topology
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon   
+ ca       ca          0.00000  0.00000   A     2.00000e-01   4.18400e-01 
+ aa       aa          0.00000  0.00000   A     2.00000e-01   4.18400e-01 
+OW           8      16.00    0.0000  A   3.15061e-01  6.36386e-01
+HW           1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+
+#include "base_ca_topol.itp"
+#include "base_aa_topol.itp"
+#include "amber99sb.ff/tip3p.itp"
+
+[ system ]
+ salt
+
+[ molecules ]
+; Compound        nmols
+cation            16  
+anion             16
+SOL               7200

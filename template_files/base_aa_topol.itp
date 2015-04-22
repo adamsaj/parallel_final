@@ -1,0 +1,10 @@
+; simple salt topology
+
+[ moleculetype ]
+;name            nrexcl
+ anion           3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass     
+     1   aa     1   IOM    AA     1    -1.0000      50.00000 
+
