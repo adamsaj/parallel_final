@@ -39,7 +39,7 @@ export MIC_OMP_NUM_THREADS=4
 source ~/.bashrc
 
 # now for 100 ps
-grompp -f grompp_run.mdp -maxwarn 10
+grompp -f grompp_equil_nvt.mdp -maxwarn 10
 ibrun.symm -m $HOME/programs/gromacs/5.0.4/bin/mdrun.mic
 #mpirun -np 12 mdrun_mpi
 
