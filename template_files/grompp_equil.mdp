@@ -60,7 +60,7 @@ domain-decomposition     = no
 ; Method for doing electrostatics
 coulombtype              = pme
 rcoulomb-switch          = 0
-rcoulomb                 = 1.4
+rcoulomb                 = 1.3
 ; Dielectric constant (DC) for cut-off or DC of reaction field
 epsilon-r                = 1
 ; Method for doing Van der Waals
