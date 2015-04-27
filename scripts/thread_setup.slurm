@@ -12,7 +12,7 @@ cd /work/03358/tg826576/parallel_final/benchmark_runs/
 
 cd thread_scaling
 for i in 4 20 40 60 80 100 120 140 160 180 200 220 240; do
-	mkdir $i
+#	mkdir $i
 	cd $i
 	cp /work/03358/tg826576/parallel_final/template_files/base* /work/03358/tg826576/parallel_final/template_files/grompp* /work/03358/tg826576/parallel_final/template_files/topol.top .
 	cp /work/03358/tg826576/parallel_final/template_files/conf.gro_0.125 ./conf.gro

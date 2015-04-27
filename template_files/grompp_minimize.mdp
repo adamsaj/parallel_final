@@ -67,7 +67,7 @@ epsilon-r                = 1
 vdw-type                 = Switch
 ; cut-off lengths       
 rvdw-switch              = 1.1
-rvdw                     = 1.3
+rvdw                     = 1.4
 ; Apply long range dispersion corrections for Energy and Pressure
 DispCorr                 = EnerPres
 ; Extension of the potential lookup tables beyond the cut-off

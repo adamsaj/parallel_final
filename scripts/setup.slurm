@@ -10,9 +10,9 @@ source ~/.bashrc
 
 cd /work/03358/tg826576/parallel_final/benchmark_runs/
 
-cd strong_scaling
+cd processor_scaling
 for i in 1 5 10 15 20 25 30 35 40 45 50 55 60; do
-	mkdir $i
+	#mkdir $i
 	cd $i
 	cp /work/03358/tg826576/parallel_final/template_files/base* /work/03358/tg826576/parallel_final/template_files/grompp* /work/03358/tg826576/parallel_final/template_files/topol.top .
 	cp /work/03358/tg826576/parallel_final/template_files/conf.gro_0.125 ./conf.gro
@@ -22,7 +22,7 @@ done
 
 cd ../symetric
 for i in 1 5 10 15 20 30 60; do
-	mkdir $i
+	#mkdir $i
 	cd $i
 	cp /work/03358/tg826576/parallel_final/template_files/base* /work/03358/tg826576/parallel_final/template_files/grompp* /work/03358/tg826576/parallel_final/template_files/topol.top .
 	cp /work/03358/tg826576/parallel_final/template_files/conf.gro_0.125 ./conf.gro

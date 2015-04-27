@@ -2,9 +2,9 @@
 #SBATCH -A TG-CCR140008
 #SBATCH -J benchmark
 #SBATCH -o benchmark.stdout
-#SBATCH -n 1
-#SBATCH -p normal
-#SBATCH -t 01:00:00     
+#SBATCH -n 1 -N 1
+#SBATCH -p normal-mic
+#SBATCH -t 05:00:00     
 
 export MIC_PPN=processor_count
 export MIC_OMP_NUM_THREADS=thread_count
