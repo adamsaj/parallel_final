@@ -4,10 +4,10 @@
 #SBATCH -o benchmark.stdout
 #SBATCH -n 1
 #SBATCH -p normal
-#SBATCH -t 05:00:00     
+#SBATCH -t 01:00:00     
 
-export MIC_PPN=3
-export MIC_OMP_NUM_THREADS=4
+export MIC_PPN=processor_count
+export MIC_OMP_NUM_THREADS=thread_count
 
 source ~/.bashrc
 
